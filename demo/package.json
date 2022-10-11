@@ -3,8 +3,9 @@
   "version": "0.0.1",
   "author": "Dmitry Zakharov <dzakh.dev@gmail.com>",
   "scripts": {
-    "start": "platformatic db start",
-    "dev": "npm run start",
+    "platformatic:start": "platformatic db start",
+    "platformatic:dev": "npm run platformatic:compile && npm run start",
+    "platformatic:generate-types": "rescript-platformatic generate-types",
     "res:build": "rescript build -with-deps",
     "res:dev": "rescript build -with-deps -w"
   },

@@ -21,6 +21,9 @@
   },
   "license": "MIT",
   "author": "Dmitry Zakharov <dzakh.dev@gmail.com>",
+  "bin": {
+    "rescript-platformatic": "cli.js"
+  },
   "files": [
     "src/",
     "bsconfig.json"
@@ -30,19 +33,19 @@
     "res:dev": "rescript build -with-deps -w",
     "test": "ava"
   },
-  "devDependencies": {
-    "rescript": "10.0.1",
-    "@dzakh/rescript-ava": "^0.4.0",
-    "ava": "4.3.x"
-  },
-  "peerDependencies": {
-    "platformatic": "0.3.x",
-    "rescript": "10.0.x"
-  },
   "ava": {
     "files": [
       "__tests__/**/*_test.mjs",
       "__tests__/**/*_test.bs.js"
     ]
+  },
+  "devDependencies": {
+    "@dzakh/rescript-ava": "^0.4.0",
+    "ava": "4.3.x",
+    "rescript": "10.0.1"
+  },
+  "peerDependencies": {
+    "platformatic": "0.3.x",
+    "rescript": "10.0.x"
   }
 }
