@@ -1,0 +1,17 @@
+{
+  "name": "rescript-platformatic-demo",
+  "version": "0.0.1",
+  "author": "Dmitry Zakharov <dzakh.dev@gmail.com>",
+  "scripts": {
+    "start": "platformatic db start",
+    "dev": "npm run start",
+    "res:build": "rescript build -with-deps",
+    "res:dev": "rescript build -with-deps -w"
+  },
+  "dependencies": {
+    "@ryyppy/rescript-promise": "2.1.0",
+    "platformatic": "0.3.0",
+    "rescript": "10.0.1",
+    "rescript-platformatic": "../"
+  }
+}

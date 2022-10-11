@@ -1,0 +1,16 @@
+{
+  "name": "rescript-platformatic-demo",
+  "namespace": false,
+  "suffix": ".bs.js",
+  "package-specs": {
+    "module": "commonjs",
+    "in-source": true
+  },
+  "sources": [
+    {
+      "dir": "src",
+      "subdirs": true
+    }
+  ],
+  "bs-dependencies": ["rescript-platformatic", "@ryyppy/rescript-promise"]
+}

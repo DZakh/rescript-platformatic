@@ -1,0 +1,48 @@
+{
+  "name": "rescript-platformatic",
+  "version": "0.0.1",
+  "description": "ReScript bindings for Platformatic",
+  "keywords": [
+    "ReScript",
+    "Platformatic",
+    "SQL",
+    "Mapper",
+    "GraphQL",
+    "REST",
+    "API"
+  ],
+  "homepage": "https://github.com/DZakh/rescript-platformatic#readme",
+  "bugs": {
+    "url": "https://github.com/DZakh/rescript-platformatic/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DZakh/rescript-platformatic.git"
+  },
+  "license": "MIT",
+  "author": "Dmitry Zakharov <dzakh.dev@gmail.com>",
+  "files": [
+    "src/",
+    "bsconfig.json"
+  ],
+  "scripts": {
+    "res:build": "rescript build -with-deps",
+    "res:dev": "rescript build -with-deps -w",
+    "test": "ava"
+  },
+  "devDependencies": {
+    "rescript": "10.0.1",
+    "@dzakh/rescript-ava": "^0.4.0",
+    "ava": "4.3.x"
+  },
+  "peerDependencies": {
+    "platformatic": "0.3.x",
+    "rescript": "10.0.x"
+  },
+  "ava": {
+    "files": [
+      "__tests__/**/*_test.mjs",
+      "__tests__/**/*_test.bs.js"
+    ]
+  }
+}
